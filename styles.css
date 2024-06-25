@@ -102,10 +102,11 @@ main{
     text-align: start;
 }
 .future-pix{
-    width: 100%;
+    width: 40%;
     display: flex;
     flex-direction: row;
     align-items:center;
+    
 }
 
 .future-text-bg{
@@ -115,13 +116,13 @@ main{
     align-items: center;
     background-color: rgb(222, 221, 221);
     height: 49vh;
-    width: 100%;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    width: 40%;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
 }
 
 .future-text-bg h1{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .future-text{
     width: 60%;
@@ -130,7 +131,7 @@ main{
     justify-content: center;
     align-items: start;
     text-align: start;
-    padding: 2rem;
+    padding: 1rem;
     margin:4rem;
 }
 
