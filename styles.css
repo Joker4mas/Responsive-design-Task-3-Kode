@@ -92,12 +92,17 @@ main{
     padding:5rem;
     display: flex;
     flex-direction: row;
+    justify-content:center;
     align-items: center;
-    gap: 2;
+    text-align:center;
+    margin:0 auto;
+    /* gap: 2; */
+    /* border:2px solid red;  */
 }
 
 .future-bg{
-    width: 100%;
+    /* border:2px solid green; */
+    /* width: 0%; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -105,14 +110,15 @@ main{
     text-align: start;
 }
 .future-pix{
-    width: 50%;
+    width: 1000%;
     display: flex;
     flex-direction: row;
 
 }
 
 .future-text-bg{
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(222, 221, 221);
@@ -272,12 +278,28 @@ main{
 }
 
 
-@media screen(min-width: 768) {
-    
+.blogs-container{
+    display: none;
+}
+
+.useful-link{
+    display: none;
+}
+.footer-Hero{
+    display: none;
+}
+.footer{
+    display:none;
+}
+
+.mobile-pix-top, 
+.mobile-pix-bottom{
+    display:none;
+
 }
 
 
-
+/* mobile view  */
 @media screen and  (max-width: 30em ) {
     .header ul{
         display: none;
