@@ -2,8 +2,8 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-height: 100%;
-    min-width: 100%;
+    /* min-height: 100%;
+    min-width: 100%; */
 }
 main{
     display: block;
@@ -12,11 +12,12 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 1rem 0; */
-    margin: .5rem;
+    /* margin: .5rem 0; */
 
 }
- 
+.logo{
+    height: 10vh;
+}
 .header ul {
     display: flex;
     list-style: none;
@@ -27,31 +28,19 @@ main{
 .header ul li a{
     text-decoration: none;
     color: black;
-    /* font-weight: 600; */
-    /* font-size: 1.5rem; */
     padding: .5rem;
-    /* border-radius: .5rem; */
     cursor: pointer;
 }
 
 .header ul li{
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: .5rem;
 }
-
-/* .header ul li:hover{
-    border: 2px solid black;
-    transition: all 0.3s ease-in-out;
-} */
-
-
 
 .hamburger{
     display: none;
 }
-
-
 
 .hero-section{
     background-image: url(assets/hero-image.png);
@@ -59,7 +48,6 @@ main{
     background-size: cover;
     height: 100vh;
     position: relative;
-    /* width: 100%; */
 }
 
 .hero-text{
@@ -87,26 +75,29 @@ main{
 }
 
 .future-section{
-    width: 100%;
+    width: 90%;
     background-color: #fff;
     /* padding:1rem; */
     display: flex;
     flex-direction: row;
-    margin: 3rem 0;
-    /* border: 2px solid green; */
-
+    margin: 3rem auto;
 
 }
 
 .future-bg{
+    /* border: 2px solid red; */
+    width: 90%;;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: start;
     text-align: start;
+    gap: 2;
+    margin: 0 auto;
+
 }
 .future-pix{
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -119,8 +110,8 @@ main{
     justify-content: center;
     align-items: center;
     background-color: rgb(222, 221, 221);
-    height: 49vh;
-    width: 40%;
+    height: 49.4vh;
+    width: 50%;
     border-top-right-radius: 3rem;
     border-bottom-right-radius: 3rem;
 }
@@ -128,15 +119,15 @@ main{
 .future-text-bg h1{
     font-size: 2rem;
 }
+
 .future-text{
-    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     text-align: start;
-    padding: 1rem;
-    margin:4rem;
+    padding: 2rem;
+    margin:1rem 0;
 }
 
 .services{
@@ -154,7 +145,6 @@ main{
 }
 
 .services-container{
-    /* border: 2px solid #ccc; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -194,12 +184,12 @@ main{
 }
 
 /* .spaces-x{
-    /* width: 10%;
+    width: 10%;
     color: white;
     padding: .8rem;
     background-color: rgb(92, 92, 136) ;
-    border-radius: 2rem; */ */
-}
+    border-radius: 2rem;
+    }*/
 
 .booking-container{
     background-image: url(assets/blog-pic/BespokePartnerships.png);
@@ -295,7 +285,9 @@ main{
 }
 
 
-/* mobile view begins here  */
+/* mobile view begins here for screen size of 320px */
+
+
 @media screen and  (max-width: 30em ) {
     .header ul{
         display: none;
@@ -303,24 +295,24 @@ main{
     .hamburger{
         display: block;
         /* color: black; */
-        font-size: 2rem;
+        font-size: 1rem;
         cursor: pointer;
     }
     .hamburger img{
         color: black;
-        width: 2.5rem;
+        width: 2rem;
     }
     
 .hero-section{
     background-image: url(assets/mobile-image/Image.png);
     background-image: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
+    /* width: 80%; */
     position: relative;
-    /* width: 100%; */
 }
 .hero-text{
-    width:90%;
+    width:80%;
     display: block;
     flex-direction: column;
     justify-content: center;
@@ -328,7 +320,7 @@ main{
     text-align: start;
     padding: 1rem;
     position: absolute;
-    top: 3%;
+    top: 2%;
     left: 0;
     background-color: #fff;
     border-top-right-radius: 2rem;
@@ -338,17 +330,15 @@ main{
 
 .future-section{
     width: 90%;
-    padding:1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
-    /* gap: 2; */
-    margin: 0 auto;
+    margin: 4rem auto;
 }
 
 .future-bg{
-    width: 100%;
+    /* width: 90%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -356,10 +346,10 @@ main{
     text-align: start;
 }
 .future-pix{
-    width: 100%;
+    /* width: 90%; */
     display: flex;
     flex-direction: column;
-    margin-top:2rem;
+    /* margin-top:2rem; */
 
 }
 
@@ -376,18 +366,19 @@ main{
     display: flex;
 }
 .mobile-pix-bottom img{
-    height: 30vh;
+    height: 20vh;
     width:100%;
 }
 .mobile-pix-top img{
     width:100%;
 }
 .future-text-bg{
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: rgb(222, 221, 221);
-    /* height: 50vh; */
     width: 100%;
     border-top-right-radius: 0;
     border-bottom-left-radius: 2rem;
@@ -395,20 +386,22 @@ main{
 }
 
 .future-text-bg h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
+
 .future-text{
     width: 80%;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1rem;
-    margin:2rem;
+    padding: .5rem;
+    margin:1rem;
 }
 .services{
-    width:90%;
+    width:100%;
     display: block;
     justify-content: space-between;
     align-items: center;
@@ -424,21 +417,18 @@ main{
 
 
 .services-container{
-    /* border: 2px solid #ccc; */
-    /* width: 90%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* gap:; */
-    /* margin: 2rem; */
-     /* padding: 2rem; */
+    align-items: center;
+    text-align: center;
+
 }
 
 #service{
-    width: 95%;
+    width: 100%;
     background-color: rgb(205, 227, 205);
     border-radius: 1rem;
-    /* padding: 1.5rem; */
     text-align: start;
     margin-bottom: 2rem;
 }
@@ -447,7 +437,6 @@ main{
 .service-p{
     width: 90%;
     font-size: 1.2rem;
-    /* margin: 0 auto; */
 }
 #service h5{
     font-size: 1.5rem;
