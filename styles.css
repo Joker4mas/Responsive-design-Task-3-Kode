@@ -23,6 +23,7 @@ main{
     list-style: none;
     justify-content: space-between;
     gap: 1.5rem;
+    margin-right: 1rem;
 }
 
 .header ul li a{
@@ -173,7 +174,7 @@ main{
     display: block;
     justify-content: center;
     text-align: center;
-    margin: 2rem auto;
+    margin: 2rem ;
 }
 
 .pic-location{
@@ -183,13 +184,14 @@ main{
     margin-bottom: 2rem;
 }
 
-/* .spaces-x{
+.spaces-x{
     width: 10%;
     color: white;
     padding: .8rem;
-    background-color: rgb(92, 92, 136) ;
+    background-color: #064749;
     border-radius: 2rem;
-    }*/
+    border: none;
+    }
 
 .booking-container{
     background-image: url(assets/blog-pic/BespokePartnerships.png);
@@ -458,9 +460,32 @@ main{
 /* styles for locations mobile */
 
 .location-container{
-    display: none;
+    width: 90%;
+    display: flex;
+    flex-direction:column; 
+    justify-content: center;
+    text-align: center;
+    margin: 1rem ;
+
 }
 
+.pic-location{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.sites img{
+    width: 100%;
+}
+.spaces-x{
+    width:40%;
+    margin: 2rem auto;
+    font-weight:bold;
+}
 /* booking container for mobile view */
 .booking-container{
     display: none;
